@@ -11,14 +11,18 @@ import {
   MatGridListModule,
   MatCardModule,
   MatMenuModule,
+  MatTreeModule,
 } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TreeComponent } from './tree/tree.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [NavbarComponent, DashboardComponent],
+  declarations: [NavbarComponent, DashboardComponent, TreeComponent],
   imports: [
     CommonModule,
     LayoutModule,
+    RouterModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -27,7 +31,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatTreeModule,
   ],
-  exports: [NavbarComponent, DashboardComponent],
+  exports: [NavbarComponent, DashboardComponent, TreeComponent],
 })
 export class CoreModule {}
