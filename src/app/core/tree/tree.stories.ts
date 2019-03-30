@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/angular';
-import { NavbarComponent } from './navbar.component';
 import { CoreModule } from '../core.module';
+import { TreeComponent } from './tree.component';
 
-storiesOf(`Core/navbar`, module).add(
+storiesOf(`Core/tree`, module).add(
   'Default',
   () => ({
-    component: NavbarComponent,
+    component: TreeComponent,
     moduleMetadata: {imports: [CoreModule]}
   }),
   { notes: 'My notes on a button with emojis' }

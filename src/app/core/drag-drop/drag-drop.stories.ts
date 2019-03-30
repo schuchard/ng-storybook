@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/angular';
-import { NavbarComponent } from './navbar.component';
 import { CoreModule } from '../core.module';
+import { DragDropComponent } from './drag-drop.component';
 
-storiesOf(`Core/navbar`, module).add(
+storiesOf(`Core/drag-drop`, module).add(
   'Default',
   () => ({
-    component: NavbarComponent,
+    component: DragDropComponent,
     moduleMetadata: {imports: [CoreModule]}
   }),
   { notes: 'My notes on a button with emojis' }
