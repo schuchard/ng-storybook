@@ -16,9 +16,11 @@ import {
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TreeComponent } from './tree/tree.component';
 import { RouterModule } from '@angular/router';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
-  declarations: [NavbarComponent, DashboardComponent, TreeComponent],
+  declarations: [NavbarComponent, DashboardComponent, TreeComponent, DragDropComponent],
   imports: [
     CommonModule,
     LayoutModule,
@@ -32,7 +34,8 @@ import { RouterModule } from '@angular/router';
     MatCardModule,
     MatMenuModule,
     MatTreeModule,
+    DragDropModule,
   ],
-  exports: [NavbarComponent, DashboardComponent, TreeComponent],
+  exports: [NavbarComponent, DashboardComponent, TreeComponent, DragDropComponent],
 })
 export class CoreModule {}
