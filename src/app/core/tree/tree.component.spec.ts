@@ -9,12 +9,8 @@ describe('TreeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TreeComponent ],
-      imports: [
-        MatButtonModule,
-        MatIconModule,
-        MatTreeModule,
-      ]
+      declarations: [TreeComponent],
+      imports: [MatButtonModule, MatIconModule, MatTreeModule],
     }).compileComponents();
   }));
 

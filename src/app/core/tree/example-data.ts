@@ -14,12 +14,12 @@ export const files = [
             children: [
               { name: 'package.json', type: 'file' },
               { name: 'BUILD.bazel', type: 'file' },
-            ]
+            ],
           },
-          { name: 'lib', type: 'folder' }
-        ]
-      }
-    ]
+          { name: 'lib', type: 'folder' },
+        ],
+      },
+    ],
   },
   {
     name: 'angular',
@@ -28,20 +28,14 @@ export const files = [
       {
         name: 'packages',
         type: 'folder',
-        children: [
-          { name: '.travis.yml', type: 'file' },
-          { name: 'firebase.json', type: 'file' }
-        ]
+        children: [{ name: '.travis.yml', type: 'file' }, { name: 'firebase.json', type: 'file' }],
       },
-      { name: 'package.json', type: 'file' }
-    ]
+      { name: 'package.json', type: 'file' },
+    ],
   },
   {
     name: 'angularjs',
     type: 'folder',
-    children: [
-      { name: 'gulpfile.js', type: 'file' },
-      { name: 'README.md', type: 'file' }
-    ]
-  }
+    children: [{ name: 'gulpfile.js', type: 'file' }, { name: 'README.md', type: 'file' }],
+  },
 ];

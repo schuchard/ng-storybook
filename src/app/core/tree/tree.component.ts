@@ -25,10 +25,9 @@ export interface FlatTreeNode {
 @Component({
   selector: 'app-tree',
   templateUrl: './tree.component.html',
-  styleUrls: ['./tree.component.css']
+  styleUrls: ['./tree.component.css'],
 })
 export class TreeComponent {
-
   /** The TreeControl controls the expand/collapse state of tree nodes.  */
   treeControl: FlatTreeControl<FlatTreeNode>;
 
@@ -43,7 +42,8 @@ export class TreeComponent {
       this.transformer,
       this.getLevel,
       this.isExpandable,
-      this.getChildren);
+      this.getChildren
+    );
 
     this.treeControl = new FlatTreeControl(this.getLevel, this.isExpandable);
     this.dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
@@ -56,7 +56,7 @@ export class TreeComponent {
       name: node.name,
       type: node.type,
       level: level,
-      expandable: !!node.children
+      expandable: !!node.children,
     };
   }
 
