@@ -37,7 +37,8 @@
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
     "@babel/core": "^7.4.0",
-    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-actions": "5.0.5",
+    "@storybook/addon-console": "1.1.0",
     "@storybook/addon-links": "^5.0.5",
     "@storybook/addon-notes": "^5.0.5",
     "@storybook/addons": "^5.0.5",
@@ -64,14 +65,14 @@
     "typescript": "~3.2.2"
   },
   "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "*.{js,json,css,md,ts,html,component.html}": [
-        "prettier --write",
-        "git add"
-      ]
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,ts,html,component.html}": [
+      "prettier --write",
+      "git add"
+    ]
   }
+}
