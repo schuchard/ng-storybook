@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/angular';
 import { CoreModule } from '../core.module';
 import { DashboardComponent } from './dashboard.component';
-import { action, configureActions } from '@storybook/addon-actions';
 import { select, withKnobs } from '@storybook/addon-knobs';
 
 const label = 'Cards';
