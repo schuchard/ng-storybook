@@ -17,6 +17,12 @@ const stories = storiesOf(`Core/dashboard`, module);
 
 stories.addDecorator(withKnobs);
 stories
+.addParameters({
+  backgrounds: [
+    { name: 'Light', value: '#f6f8fa', default: true },
+    { name: 'Dark', value: '#343e48' },
+  ],
+})
   .add('Default', () => ({
     component: DashboardComponent,
     moduleMetadata: { imports: [CoreModule] },
